@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_grapg"
+    app:startDestination="@id/profileFragment">
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.secondproject.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_TLListFragment"
+            app:destination="@id/TLListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.secondproject.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_TLListFragment"
+            app:destination="@id/TLListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/TLListFragment"
+        android:name="com.example.secondproject.TLListFragment"
+        android:label="fragment_t_l_list"
+        tools:layout="@layout/fragment_t_l_list" >
+        <action
+            android:id="@+id/action_TLListFragment_to_newTLFragment"
+            app:destination="@id/newTLFragment" />
+        <action
+            android:id="@+id/action_TLListFragment_to_infoTLFragment"
+            app:destination="@id/infoTLFragment" />
+        <action
+            android:id="@+id/action_TLListFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_TLListFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newTLFragment"
+        android:name="com.example.secondproject.NewTLFragment"
+        android:label="fragment_new_t_l"
+        tools:layout="@layout/fragment_new_t_l" >
+        <action
+            android:id="@+id/action_newTLFragment_to_TLListFragment"
+            app:destination="@id/TLListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoTLFragment"
+        android:name="com.example.secondproject.InfoTLFragment"
+        android:label="fragment_info_t_l"
+        tools:layout="@layout/fragment_info_t_l" >
+        <action
+            android:id="@+id/action_infoTLFragment_to_TLListFragment"
+            app:destination="@id/TLListFragment" />
+        <action
+            android:id="@+id/action_infoTLFragment_to_newTLFragment"
+            app:destination="@id/newTLFragment" />
+    </fragment>
+</navigation>

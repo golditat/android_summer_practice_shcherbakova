@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.example.secondproject.app-mergeDebugResources-47:/layout/item_tl.xml",
+        "source": "com.example.secondproject.app-main-50:/layout/item_tl.xml"
+    },
+    {
+        "merged": "com.example.secondproject.app-mergeDebugResources-47:/layout/fragment_t_l_list.xml",
+        "source": "com.example.secondproject.app-main-50:/layout/fragment_t_l_list.xml"
+    },
+    {
+        "merged": "com.example.secondproject.app-mergeDebugResources-47:/layout/fragment_settings.xml",
+        "source": "com.example.secondproject.app-main-50:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "com.example.secondproject.app-mergeDebugResources-47:/layout/activity_container.xml",
+        "source": "com.example.secondproject.app-main-50:/layout/activity_container.xml"
+    },
+    {
+        "merged": "com.example.secondproject.app-mergeDebugResources-47:/layout/fragment_info_t_l.xml",
+        "source": "com.example.secondproject.app-main-50:/layout/fragment_info_t_l.xml"
+    },
+    {
+        "merged": "com.example.secondproject.app-mergeDebugResources-47:/layout/fragment_profile.xml",
+        "source": "com.example.secondproject.app-main-50:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.example.secondproject.app-mergeDebugResources-47:/layout/fragment_new_t_l.xml",
+        "source": "com.example.secondproject.app-main-50:/layout/fragment_new_t_l.xml"
+    }
+]
