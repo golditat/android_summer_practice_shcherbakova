@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_grapg"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.secondproject.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_newTLFragment"
+            app:destination="@id/newTLFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.secondproject.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_newTLFragment"
+            app:destination="@id/newTLFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoTLFragment"
+        android:name="com.example.secondproject.InfoTLFragment"
+        android:label="fragment_info_t_l"
+        tools:layout="@layout/fragment_info_t_l" >
+        <action
+            android:id="@+id/action_infoTLFragment_to_newTLFragment"
+            app:destination="@id/newTLFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/newTLFragment"
+        android:name="com.example.secondproject.NewTLFragment"
+        android:label="fragment_new_t_l"
+        tools:layout="@layout/fragment_new_t_l" />
+    <fragment
+        android:id="@+id/infoTL2Fragment"
+        android:name="com.example.secondproject.InfoTL2Fragment"
+        android:label="fragment_info_t_l2"
+        tools:layout="@layout/fragment_info_t_l2" >
+        <action
+            android:id="@+id/action_infoTL2Fragment_to_newTLFragment"
+            app:destination="@id/newTLFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoTL3Fragment"
+        android:name="com.example.secondproject.InfoTL3Fragment"
+        android:label="InfoTL3Fragment" >
+        <action
+            android:id="@+id/action_infoTL3Fragment_to_newTLFragment"
+            app:destination="@id/newTLFragment" />
+    </fragment>
+</navigation>
