@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile_icon"
+        android:title="Profile"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/settings_icon"
+        android:title="Settings"/>
+    <item
+        android:id="@+id/TLListFragment"
+        android:icon="@drawable/adding_tl_icon"
+        android:title="TLList"/>
+    <!--<item
+        android:id="@+id/infoTL2Fragment"
+        android:icon="@drawable/adding_tl_icon"
+        android:title="TL2"/>
+    <item
+        android:id="@+id/infoTL3Fragment"
+        android:icon="@drawable/adding_tl_icon"
+        android:title="TL3"/> -->
+</menu>

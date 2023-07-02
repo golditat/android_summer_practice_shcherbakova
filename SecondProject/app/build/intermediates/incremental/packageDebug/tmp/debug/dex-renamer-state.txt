@@ -1,4 +1,4 @@
-#Sun Jul 02 02:07:23 MSK 2023
+#Sun Jul 02 02:32:46 MSK 2023
 base.0=C\:\\Users\\Huawei\\AndroidStudioProjects\\SecondProject\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Huawei\\AndroidStudioProjects\\SecondProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\Huawei\\AndroidStudioProjects\\SecondProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
