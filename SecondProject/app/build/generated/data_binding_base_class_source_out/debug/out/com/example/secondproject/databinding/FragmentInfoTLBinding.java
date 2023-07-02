@@ -22,6 +22,9 @@ public final class FragmentInfoTLBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final Button buttonTOTLList;
+
+  @NonNull
   public final Button buttonToNewTL;
 
   @NonNull
@@ -36,10 +39,11 @@ public final class FragmentInfoTLBinding implements ViewBinding {
   @NonNull
   public final TextView textViewInfoTL;
 
-  private FragmentInfoTLBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonToNewTL,
-      @NonNull ImageView imageView, @NonNull TextView textView, @NonNull TextView textView2,
-      @NonNull TextView textViewInfoTL) {
+  private FragmentInfoTLBinding(@NonNull ConstraintLayout rootView, @NonNull Button buttonTOTLList,
+      @NonNull Button buttonToNewTL, @NonNull ImageView imageView, @NonNull TextView textView,
+      @NonNull TextView textView2, @NonNull TextView textViewInfoTL) {
     this.rootView = rootView;
+    this.buttonTOTLList = buttonTOTLList;
     this.buttonToNewTL = buttonToNewTL;
     this.imageView = imageView;
     this.textView = textView;
@@ -74,6 +78,12 @@ public final class FragmentInfoTLBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.buttonTOTLList;
+      Button buttonTOTLList = ViewBindings.findChildViewById(rootView, id);
+      if (buttonTOTLList == null) {
+        break missingId;
+      }
+
       id = R.id.buttonToNewTL;
       Button buttonToNewTL = ViewBindings.findChildViewById(rootView, id);
       if (buttonToNewTL == null) {
@@ -104,8 +114,8 @@ public final class FragmentInfoTLBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentInfoTLBinding((ConstraintLayout) rootView, buttonToNewTL, imageView,
-          textView, textView2, textViewInfoTL);
+      return new FragmentInfoTLBinding((ConstraintLayout) rootView, buttonTOTLList, buttonToNewTL,
+          imageView, textView, textView2, textViewInfoTL);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

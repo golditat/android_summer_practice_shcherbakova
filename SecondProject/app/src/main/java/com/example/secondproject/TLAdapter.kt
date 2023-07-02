@@ -8,7 +8,8 @@ import com.example.secondproject.databinding.ItemTlBinding
 
 class TLAdapter(
     private var list:List<TL>,
-    private val glide: RequestManager
+    private val glide: RequestManager,
+    private val onItemClick: (Int) -> Unit
 ) : RecyclerView.Adapter<TLItem>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int
@@ -18,7 +19,8 @@ class TLAdapter(
                 parent,
                 false
             ),
-            glide = glide
+            glide = glide,
+            onItemClick = onItemClick
     )
 
     override fun onBindViewHolder(holder: TLItem, position: Int) {

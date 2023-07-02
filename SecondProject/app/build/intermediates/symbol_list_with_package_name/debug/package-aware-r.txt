@@ -2614,8 +2614,8 @@ id accessibility_custom_action_9
 id actionDown
 id actionDownUp
 id actionUp
+id action_TLListFragment_to_editTLFragment
 id action_TLListFragment_to_infoTLFragment
-id action_TLListFragment_to_newTLFragment
 id action_TLListFragment_to_profileFragment
 id action_TLListFragment_to_settingsFragment
 id action_bar
@@ -2628,17 +2628,21 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
+id action_editTLFragment_to_TLListFragment
+id action_editTLFragment_to_TLListFragment2
+id action_editTLFragment_to_infoTLFragment
+id action_editTLFragment_to_profileFragment
+id action_editTLFragment_to_settingsFragment
 id action_image
 id action_infoTLFragment_to_TLListFragment
-id action_infoTLFragment_to_newTLFragment
+id action_infoTLFragment_to_editTLFragment
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_newTLFragment_to_TLListFragment
 id action_profileFragment_to_TLListFragment
-id action_profileFragment_to_settingsFragment
+id action_profileFragment_to_settingsFragment2
 id action_settingsFragment_to_TLListFragment
 id action_settingsFragment_to_profileFragment
 id action_text
@@ -2678,6 +2682,7 @@ id button
 id button2
 id buttonNewTLToInfoTL
 id buttonPanel
+id buttonTOTLList
 id buttonToNewTL
 id cache_measures
 id callMeasure
@@ -2753,6 +2758,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id editTLFragment
 id edit_query
 id elastic
 id end
@@ -2899,7 +2905,6 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
-id newTLFragment
 id noScroll
 id noState
 id none
@@ -3041,6 +3046,7 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id textViewInfoTL
 id text_input_end_icon
 id text_input_error_icon
@@ -3195,8 +3201,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_edit_t_l
 layout fragment_info_t_l
-layout fragment_new_t_l
 layout fragment_profile
 layout fragment_settings
 layout fragment_t_l_list

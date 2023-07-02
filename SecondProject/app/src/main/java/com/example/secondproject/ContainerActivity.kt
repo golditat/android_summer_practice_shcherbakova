@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.example.secondproject.databinding.ActivityContainerBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ContainerActivity : AppCompatActivity() {
@@ -14,5 +15,12 @@ class ContainerActivity : AppCompatActivity() {
         findViewById<BottomNavigationView>(R.id.bnv).apply{
             setupWithNavController(controller)
         }
+        var binding = ActivityContainerBinding.inflate(layoutInflater).also {
+            setContentView(it.root)
+        }
+        if(savedInstanceState !=null) {
+            return
+        }
+        supportFragmentManager.beginTransaction()
     }
 }

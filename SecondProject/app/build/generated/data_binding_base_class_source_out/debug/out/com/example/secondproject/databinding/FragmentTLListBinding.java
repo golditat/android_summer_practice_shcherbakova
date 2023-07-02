@@ -4,6 +4,7 @@ package com.example.secondproject.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.secondproject.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,7 +23,7 @@ public final class FragmentTLListBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final FloatingActionButton fab;
+  public final Button fab;
 
   @NonNull
   public final ImageView imageView;
@@ -34,9 +34,8 @@ public final class FragmentTLListBinding implements ViewBinding {
   @NonNull
   public final TextView textView5;
 
-  private FragmentTLListBinding(@NonNull ConstraintLayout rootView,
-      @NonNull FloatingActionButton fab, @NonNull ImageView imageView, @NonNull RecyclerView rvTl,
-      @NonNull TextView textView5) {
+  private FragmentTLListBinding(@NonNull ConstraintLayout rootView, @NonNull Button fab,
+      @NonNull ImageView imageView, @NonNull RecyclerView rvTl, @NonNull TextView textView5) {
     this.rootView = rootView;
     this.fab = fab;
     this.imageView = imageView;
@@ -72,7 +71,7 @@ public final class FragmentTLListBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.fab;
-      FloatingActionButton fab = ViewBindings.findChildViewById(rootView, id);
+      Button fab = ViewBindings.findChildViewById(rootView, id);
       if (fab == null) {
         break missingId;
       }

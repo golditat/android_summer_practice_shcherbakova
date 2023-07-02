@@ -1,1 +1,0 @@
-# android_summer_practice_shcherbakova

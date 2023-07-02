@@ -10,6 +10,16 @@ class ProfileFragment : Fragment(R.layout.fragment_profile){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentProfileBinding.bind(view)
+        var profName:String =arguments?.getString("PROFILE_NAME").toString()
+        var profage:String =arguments?.getString("PROFILE_AGE").toString()
+        if(profName!= null){
+            User.name = profName
+        }
+        if(profage!= null){
+            User.age = profage
+        }
+        binding?.textView3?.text = User.name
+        binding?.textView4?.text = User.age
 //        binding?.run{
   //          buttonToTL.setOnClickListener {
     //            var bundle = Bundle()

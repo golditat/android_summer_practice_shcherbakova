@@ -24,12 +24,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="navigationResourceFile" />
         <option value="resourceFile" />
         <option value="layoutResourceFile" />
         <option value="Kotlin Data Class" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
+        <option value="navigationResourceFile" />
+        <option value="Interface" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
