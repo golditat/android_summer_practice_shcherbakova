@@ -1,6 +1,5 @@
 package com.example.secondproject
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
@@ -14,14 +13,16 @@ class InfoTLFragment : Fragment(R.layout.fragment_info_t_l){
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentInfoTLBinding.bind(view)
         val iv:ImageView? = binding?.imageView
+        val id:Int? = arguments?.getInt("ID")
         binding?.run{
-            var bundle:Bundle? = requireActivity().intent.extras
-            textViewInfoTL.text = SingletonListObject.list.get(bundle!!.getInt("ID")).name
-            textView2.text = SingletonListObject.list.get(bundle!!.getInt("ID")).time
-            textView.text = SingletonListObject.list.get(bundle!!.getInt("ID")).info
-            Glide.with(root)
-                .load(SingletonListObject.list.get(bundle!!.getInt("ID")).url)
-                .into(imageView)
+            if(id!=null) {
+                textViewInfoTL.text = SingletonListObject.list.get(id).name
+                textView2.text = SingletonListObject.list.get(id).time
+                textView.text = SingletonListObject.list.get(id).info
+                Glide.with(root)
+                    .load(SingletonListObject.list.get(id).url)
+                    .into(imageView)
+            }
             buttonToNewTL.setOnClickListener {
                 findNavController().navigate(R.id.action_infoTLFragment_to_editTLFragment,
                     createBundle()
